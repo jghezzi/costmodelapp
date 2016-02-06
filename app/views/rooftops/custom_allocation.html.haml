@@ -1,0 +1,17 @@
+%h1 Listing rooftops
+= @array
+
+= form_tag upsert_rooftop_allocations_path, method: :post do
+  %table
+    %thead
+      %tr
+        %th Product
+
+    %tbody
+      - @rooftops.each do |product|
+        %tr
+          %td= check_box_tag "product_names[]", product
+          %td= product
+    %br
+  %br
+  = submit_tag "Generate Allocation"

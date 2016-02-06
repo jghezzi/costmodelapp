@@ -1,0 +1,25 @@
+%h1 Listing rooftops
+
+%table
+  %thead
+    %tr
+      %th Period
+      %th Product
+      %th Rooftops
+      %th
+      %th
+      %th
+
+  %tbody
+    - @rooftops.each do |rooftop|
+      %tr
+        %td= rooftop.period
+        %td= rooftop.product
+        %td= rooftop.rooftops
+        %td= link_to 'Show', rooftop
+        %td= link_to 'Edit', edit_rooftop_path(rooftop)
+        %td= link_to 'Destroy', rooftop, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Rooftop', new_rooftop_path

@@ -1,0 +1,19 @@
+= form_for @rooftop do |f|
+  - if @rooftop.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@rooftop.errors.count, "error")} prohibited this rooftop from being saved:"
+      %ul
+        - @rooftop.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :period
+    = f.date_select :period
+  .field
+    = f.label :product
+    = f.text_field :product
+  .field
+    = f.label :rooftops
+    = f.number_field :rooftops
+  .actions
+    = f.submit 'Save'

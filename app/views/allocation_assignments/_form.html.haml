@@ -1,0 +1,22 @@
+= form_for @allocation_assignment do |f|
+  - if @allocation_assignment.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@allocation_assignment.errors.count, "error")} prohibited this allocation_assignment from being saved:"
+      %ul
+        - @allocation_assignment.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :vendor_name
+    = f.text_field :vendor_name
+  .field
+    = f.label :location_code
+    = f.text_field :location_code
+  .field
+    = f.label :allocation_method
+    = f.text_field :allocation_method
+  .field
+    = f.label :allocation_basis
+    = f.text_field :allocation_basis
+  .actions
+    = f.submit 'Save'

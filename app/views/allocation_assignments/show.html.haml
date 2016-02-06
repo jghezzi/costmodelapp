@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Vendor name:
+  = @allocation_assignment.vendor_name
+%p
+  %b Location code:
+  = @allocation_assignment.location_code
+%p
+  %b Allocation method:
+  = @allocation_assignment.allocation_method
+%p
+  %b Allocation basis:
+  = @allocation_assignment.allocation_basis
+
+= link_to 'Edit', edit_allocation_assignment_path(@allocation_assignment)
+\|
+= link_to 'Back', allocation_assignments_path

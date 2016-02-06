@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vendor_name: MyString
+  location_code: MyString
+  allocation_method: MyString
+  allocation_basis: MyString
+
+two:
+  vendor_name: MyString
+  location_code: MyString
+  allocation_method: MyString
+  allocation_basis: MyString

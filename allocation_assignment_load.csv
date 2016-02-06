@@ -1,0 +1,3 @@
+vendor_name,location_code,allocation_method,allocation_basis
+NADA,889,all,ending_rooftops
+GhezziCorp,889,direct,vat_ending_rooftops

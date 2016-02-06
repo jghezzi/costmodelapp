@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gl_date: 2016-02-04
+  account_code: MyString
+  location_code: MyString
+  department_code: MyString
+  company_code: MyString
+  net_amount: 1.5
+
+two:
+  gl_date: 2016-02-04
+  account_code: MyString
+  location_code: MyString
+  department_code: MyString
+  company_code: MyString
+  net_amount: 1.5

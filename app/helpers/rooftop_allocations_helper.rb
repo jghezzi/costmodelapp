@@ -1,0 +1,2 @@
+module RooftopAllocationsHelper
+end

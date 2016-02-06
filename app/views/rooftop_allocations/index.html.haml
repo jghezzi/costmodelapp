@@ -1,0 +1,27 @@
+%h1 Listing rooftop_allocations
+
+%table
+  %thead
+    %tr
+      %th Allocation basis
+      %th Period
+      %th Product
+      %th Allocation
+      %th
+      %th
+      %th
+
+  %tbody
+    - @rooftop_allocations.each do |rooftop_allocation|
+      %tr
+        %td= rooftop_allocation.allocation_basis
+        %td= rooftop_allocation.period
+        %td= rooftop_allocation.product
+        %td= rooftop_allocation.allocation
+        %td= link_to 'Show', rooftop_allocation
+        %td= link_to 'Edit', edit_rooftop_allocation_path(rooftop_allocation)
+        %td= link_to 'Destroy', rooftop_allocation, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Rooftop allocation', new_rooftop_allocation_path

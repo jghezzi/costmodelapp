@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Allocation basis:
+  = @rooftop_allocation.allocation_basis
+%p
+  %b Period:
+  = @rooftop_allocation.period
+%p
+  %b Product:
+  = @rooftop_allocation.product
+%p
+  %b Allocation:
+  = @rooftop_allocation.allocation
+
+= link_to 'Edit', edit_rooftop_allocation_path(@rooftop_allocation)
+\|
+= link_to 'Back', rooftop_allocations_path

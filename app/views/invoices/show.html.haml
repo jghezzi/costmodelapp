@@ -1,0 +1,22 @@
+%p#notice= notice
+%p
+  %strong Gl date:
+  = @invoice.gl_date
+%p
+  %strong Account code:
+  = @invoice.account_code
+%p
+  %strong Location code:
+  = @invoice.location_code
+%p
+  %strong Department code:
+  = @invoice.department_code
+%p
+  %strong Company code:
+  = @invoice.company_code
+%p
+  %strong Net amount:
+  = @invoice.net_amount
+= link_to 'Edit', edit_invoice_path(@invoice)
+|
+= link_to 'Back', invoices_path

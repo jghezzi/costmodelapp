@@ -1,0 +1,27 @@
+%h1 Listing allocation_assignments
+
+%table
+  %thead
+    %tr
+      %th Vendor name
+      %th Location code
+      %th Allocation method
+      %th Allocation basis
+      %th
+      %th
+      %th
+
+  %tbody
+    - @allocation_assignments.each do |allocation_assignment|
+      %tr
+        %td= allocation_assignment.vendor_name
+        %td= allocation_assignment.location_code
+        %td= allocation_assignment.allocation_method
+        %td= allocation_assignment.allocation_basis
+        %td= link_to 'Show', allocation_assignment
+        %td= link_to 'Edit', edit_allocation_assignment_path(allocation_assignment)
+        %td= link_to 'Destroy', allocation_assignment, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Allocation assignment', new_allocation_assignment_path

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Period:
+  = @rooftop.period
+%p
+  %b Product:
+  = @rooftop.product
+%p
+  %b Rooftops:
+  = @rooftop.rooftops
+
+= link_to 'Edit', edit_rooftop_path(@rooftop)
+\|
+= link_to 'Back', rooftops_path
