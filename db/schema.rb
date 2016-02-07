@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160205185720) do
+ActiveRecord::Schema.define(version: 20160206213351) do
 
   create_table "allocation_assignments", force: :cascade do |t|
     t.string   "vendor_name"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20160205185720) do
     t.string   "vendor_name"
     t.string   "allocation_basis"
     t.integer  "allocation_assignment_id"
+    t.date     "period"
   end
 
   create_table "rooftop_allocations", force: :cascade do |t|

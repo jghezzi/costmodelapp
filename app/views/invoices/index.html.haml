@@ -4,6 +4,7 @@
   %thead
     %tr
       %th Gl date
+      %th Period
       %th Vendor Name
       %th Account code
       %th Location code
@@ -16,6 +17,7 @@
     - @invoices.each do |invoice|
       %tr
         %td= invoice.gl_date
+        %td= invoice.periods
         %td= invoice.vendor_name
         %td= invoice.account_code
         %td= invoice.location_code
